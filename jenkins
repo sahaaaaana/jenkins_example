@@ -1,0 +1,26 @@
+pipeline {
+ agent any
+ stages  {
+  stage ("code") {
+   steps {
+     echo "cloning the code"
+   }
+  }
+  stage ("build") {
+   steps {
+     echo "building the code"
+   }
+  }
+  stage ("push the code") {
+   steps {
+     echo "pushing the code to repo"
+   }
+  }
+  stage ("deploy") {
+   steps {
+     echo "deploy the code"
+   }
+  }
+ }
+} 
+ 
